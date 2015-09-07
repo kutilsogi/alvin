@@ -7,11 +7,12 @@ import Data.List
 
 -- 1.a
 
-null' x = x
+null' [] = True
+null' (a:b) = False
 
 --pembatas
 
-take' x = x
+take' 
 
 --pembatas
 
@@ -236,6 +237,3 @@ partition' x = x
 replicate' x = x
 
 --pembatas
--- First Assignment
--- Reimplement Haskell function
--- DON'T USE GOOGLE
