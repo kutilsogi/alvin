@@ -12,8 +12,13 @@ null' (a:b) = False
 
 --pembatas
 
-take' 
+take' 0 (x:xs) = []
+take' a [] = []
+take' a (x:xs) = x : take' (a-1) xs
 
+---take 1 [1,2,3,4,5,6] = [1]
+--- take 1 [2,3,4,5,6] = [2]
+--- [1,2]
 --pembatas
 
 drop' x = x
